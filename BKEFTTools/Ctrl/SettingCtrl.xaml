@@ -1,0 +1,41 @@
+<UserControl x:Class="BKEFTTools.SettingCtrl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:BKEFTTools"
+             mc:Ignorable="d"
+             d:DesignHeight="800" d:DesignWidth="1280">
+    
+    <StackPanel Orientation="Vertical">
+        
+        <Border Height="320">
+            <TextBlock FontSize="100" TextAlignment="Center" Height="120" FontWeight="Bold">BK-EFTTools</TextBlock>
+        </Border>
+                
+        <!-- EFT Path -->
+        <StackPanel Orientation="Horizontal" Height="30" HorizontalAlignment="Center">
+            <TextBlock FontSize="16" Margin="5" Width="160"> EFT Path </TextBlock>
+            <TextBox Name="EFT_PathTB" FontSize="16" Margin="5" Width="300"> empty </TextBox>
+            <Button Click="SelectEFTPath_OnClick">Select</Button>
+        </StackPanel>
+        
+        <!-- AssetStudioCLI Path -->
+        <StackPanel Orientation="Horizontal" Height="30" HorizontalAlignment="Center">
+            <TextBlock FontSize="16" Margin="5" Width="160"> AssetStudioCLI Path </TextBlock>
+            <TextBox Name="AssetStudioCLI_PathTB" FontSize="16" Margin="5" Width="300"> empty </TextBox>
+            <Button Click="SelectAssetStudioCLIPath_OnClick">Select</Button>
+        </StackPanel>
+        
+        
+        <Button 
+            Height="50"
+            Margin="0,100,0,0"
+            Width="150"
+            FontSize="35"
+            Click="LoadDataBtn_OnClick"
+            >Load</Button>
+        
+    </StackPanel>
+    
+</UserControl>

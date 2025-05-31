@@ -1,0 +1,35 @@
+﻿<Window x:Class="BKEFTTools.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BKEFTTools"
+        mc:Ignorable="d"
+        Title="BKEFTTools" Height="800" Width="1280">
+        <StackPanel
+                x:Name="MenuPageList"
+                >
+                <local:SettingCtrl x:Name="SettingPage" Width="1280" Height="800">
+                        
+                </local:SettingCtrl>
+        
+                <TabControl
+                        x:Name="MainPage"
+                        Visibility="Hidden"
+                        Width="1280"
+                        Height="800"
+                        >
+                        <TabItem Header="ItemPreset">
+                                <local:ItemPresetCtrl/>
+                        </TabItem>
+                        <TabItem Header="UserPreset">
+                                <local:UserPresetCtrl/>
+                        </TabItem>
+                        <TabItem Header="ItemDB">
+                                <local:ItemDBCtrl/>
+                        </TabItem>
+
+                </TabControl>
+        </StackPanel>
+        
+</Window>
