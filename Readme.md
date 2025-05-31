@@ -22,4 +22,4 @@
 <img src="Data/Start.png">
 <img src="Data/ItemPreset.png">
 <img src="Data/UserPreset.png">
-<img src="Data/ItemDB.png.png">
+<img src="Data/ItemDB.png">
