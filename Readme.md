@@ -1,6 +1,8 @@
 # BK-EFTTools
 
 > Version V0.01
+> 
+> Dotnet 8.0
 
 ## NuGet
 > Newtonsoft.Json
